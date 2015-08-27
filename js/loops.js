@@ -14,15 +14,15 @@ var a = [1, 2, 3, 4, 5];
 console.log("while loop");
 i = 0;
 while (i < a.length) {  
-  console.log(a[i]);
-  i++;
+    console.log(a[i]);
+    i++;
 }
 
 console.log("do-while loop");
 i = 0;
 do {  
-  console.log(a[i]);
-  i++;
+    console.log(a[i]);
+    i++;
 } while (i < a.length);
 
 console.log("for loop");
