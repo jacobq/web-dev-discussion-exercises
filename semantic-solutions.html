@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Semantics & Basic HTML/CSS</title>
+
+    <style>
+        /* This is embedded styling but don't worry about that -- it could be in a separate CSS file */
+        .some-link {
+            color: red;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<h2>What's wrong with this page? How would you write the HTML/CSS?</h2>
+    <div class="some-link">
+        <p>Click here</p>
+        <!-- or -->
+        <a href="#">Click here</a>
+    </div>
+
+</body>
+</html>
+
+<!-- We'd hope someof the following would be caught:
+
+- html attribute of id but style defined as class selector
+- bad use of id, should use class.
+- div (block elements) can't be inside a span
+- <span> should be <div> or other appropriate block tag
+- Non-semantic class name, should relate to content/purpose rather than physical property.
+- Bad use of !important. Shouldn't ever need it.
+- css rule shouldn't require display: block if using appropriate block tag
+- inside <div> should be <p>
+
+-->
